@@ -123,8 +123,8 @@ max-width: 350px;
 object {
   overflow-clip-margin: content-box !important;
   overflow: clip !important;
-  overflow-x: ;
-  overflow-y: ;
+  overflow-x: none;
+  overflow-y: none;
 }
 
 svg:root {
@@ -498,4 +498,3 @@ display:block;
   font-size: 19px;
 
 }
-.cls-1{fill:#6b4745;}.cls-1,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17,.cls-18,.cls-19,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8,.cls-9{fill-rule:evenodd;}.cls-2{fill:#1c4a6b;}.cls-3{fill:#0a1221;}.cls-4{fill:#e89673;}.cls-5{fill:#0a6978;}.cls-6{fill:#f2ba96;}.cls-7{fill:#f2a87d;}.cls-9{fill:#294078;}.cls-10{fill:#2e4787;}.cls-11{fill:#b2b2b2;}.cls-12{fill:#999;}.cls-13{fill:#ccc;}.cls-14{fill:#7ac7eb;}.cls-14,.cls-15,.cls-16,.cls-17,.cls-18,.cls-19{stroke:#000;stroke-miterlimit:2.61;}.cls-14,.cls-15,.cls-16,.cls-17{stroke-width:0.75px;}.cls-15{fill:#61bfc7;}.cls-16{fill:#d6d9de;}.cls-17{fill:#f2877d;}.cls-18{fill:#c2ded1;}.cls-18,.cls-19{stroke-width:0.5px;}.cls-19{fill:#97aca2;}
