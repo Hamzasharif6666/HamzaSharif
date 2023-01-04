@@ -132,9 +132,6 @@ svg:root {
   height
   : 100%;
 }
-object[Attributes Style] {
-  width: 350px;
-}
 
 .img-desc {
 display: flex;
@@ -142,8 +139,8 @@ flex-direction: row;
 }
 
 .man {
-  margin-top: 5%;
-  margin-right: 20%;
+margin-top: 5%;
+margin-right: 20%;
 }
 
 .intro-contact {
@@ -391,6 +388,9 @@ display: none;
 .face {
 display: none;
 }
+.baki { 
+display: none;
+}
 .intro {
 min-height: unset;
 padding-left: unset;
@@ -497,4 +497,14 @@ display:block;
   color: #ece5c7;
   font-size: 19px;
 
+}
+
+.baki img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 30px;
+  box-shadow: -12px 23px 23px -5px #0a0806c0;
+  border: none;
+  transition: 0.5s;
 }
