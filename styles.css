@@ -157,6 +157,8 @@ border-radius: 20px;
 .intro-contact:hover {
 color: var(--dgreen);
 border: 3px solid var(--dgreen);
+transition: 0.6s;
+transform: scale(1.06);
 }
 
 .container {
@@ -496,7 +498,11 @@ display:block;
 .Xero{
   color: #ece5c7;
   font-size: 19px;
-
+}
+.Xero:hover {
+  color: #97aca2;
+  transform: scale(1.06);
+  translate: 0.7s;
 }
 
 .baki img {
