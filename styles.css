@@ -68,6 +68,7 @@ text-decoration: none;
 .social i {
 color: var(--gold);
 }
+
 .social-mobile {
 padding-top: 30px;
 font-size: 30px;
@@ -245,10 +246,12 @@ color: var(--dgreen);
 font-size: 21px;
 text-align: justify;
 }
+
 /* Image div */
 .face {
 padding-left: 40px;
 }
+
 /* Actual Image */
 .baki img {
 max-width: 300px;
@@ -259,9 +262,11 @@ box-shadow: 6px 13px 23px -5px rgb(0 0 0 / 46%);
 border: none;
 transition: 0.5s;
 }
+
 .baki img:hover {
 transform: scale(1.03);
 }
+
 /* About me description */
 .container p {
 font-size: 21px;
@@ -270,9 +275,11 @@ text-align: justify;
 margin: 0;
 max-width: 600px;
 }
+
 #experience {
 margin-top: 50px;
 }
+
 #experience h1::after {
 content: "";
 display: block;
@@ -282,20 +289,24 @@ height: 1px;
 margin-left: 20px;
 background-color: var(--darkigh);
 }
+
 #date {
 color: var(--brown);
 }
+
 .exptitle {
 color: var(--gold);
 padding-bottom: 20px;
 max-width: 800px;
 font-size: 13px;
 }
+
 .card-grid {
 display: grid;
 grid-template-columns: repeat(3, minmax(300px, 1fr));
 grid-gap: 15px;
 }
+
 .card {
 display: flex;
 padding: 2rem 1.75rem;
@@ -305,9 +316,11 @@ background-color: var(--darkigh);
 border-radius: 15px;
 transition: 0.5s;
 }
+
 .card:hover {
 transform: scale(1.04);
 }
+
 .card-header {
 margin-top: -20px;
 display: flex;
@@ -316,17 +329,20 @@ flex-direction: row;
 justify-content: space-between;
 border-bottom: none !important;
 }
+
 .card-title {
 color: var(--gold);
 font-size: 24px;
 font-weight: 700;
 margin-bottom: 10px;
 }
+
 .card-desc {
 color: var(--brown);
 font-size: 18px;
 padding-bottom: 40px;
 }
+
 .card-tech {
 color: var(--dgreen);
 font-size: 16px;
@@ -336,24 +352,30 @@ padding-right: 10px;
 bottom: 0;
 padding-top: 10px;
 }
+
 .folder-icon {
 font-size: 30px;
 color: var(--green);
 }
+
 #external-links a {
 font-size: 20px;
 padding: 3px;
 color: var(--gold);
 }
+
 #external-links a:hover {
 color: var(--green);
 }
+
 .contact-box {
 width: 70%;
 }
+
 #contact-me {
 margin: unset;
 }
+
 form {
 margin-top: 5em;
 background-color: var(--darkigh);
@@ -362,8 +384,7 @@ flex-direction: column;
 padding: 20px;
 border-radius: 15px;
 }
-input,
-textarea,
+
 #contact-btn {
 padding: 12px;
 margin: 10px;
@@ -372,19 +393,24 @@ border-radius: 5px;
 color: var(--gold);
 background-color: var(--dark);
 }
+
 #contact-btn {
 width: 200px;
 }
+
 #contact-btn:hover {
 background-color: var(--gold);
 color: #354259;
 }
+
 input::placeholder {
 color: var(--gold);
 }
+
 textarea::placeholder {
 color: var(--gold);
 }
+
 .footer {
 display: flex;
 flex-direction: column;
@@ -394,10 +420,12 @@ justify-content: center;
 color: var(--gold);
 font-size: 15px;
 }
+
 .footer a {
 text-decoration: none;
 color: var(--green);
 }
+
 @media only screen and (max-width: 768px) {
 .man {
 display: none;
@@ -461,11 +489,13 @@ display: none;
 width: unset;
 }
 }
+
 @media (min-width: 769px) {
 .social-mobile {
 display: none;
 }
 }
+
 @media (max-width: 1080px) {
 .card-grid {
 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -475,6 +505,7 @@ grid-gap: 10px;
 width: 100%;
 }
 }
+
 #thanks {
 background-color: #485975;
 padding: 40px;
@@ -489,10 +520,12 @@ border-radius: 15px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
 }
+
 #thanks p {
 font-size: 28px;
 text-align:center;
 }
+
 .items{
 font-size: 22px;
 }
@@ -506,9 +539,11 @@ text-decoration: none;
 color: var(--gold);
 
 }
+
 a:-webkit-any-link {
 cursor:pointer;
 }
+
 div {
 display:block;
 }
@@ -517,6 +552,7 @@ display:block;
   color: #ece5c7;
   font-size: 19px;
 }
+
 .Xero:hover {
   color: #97aca2;
   transform: scale(1.06);
