@@ -562,9 +562,9 @@ display:block;
 .baki img {
   max-width: 300px;
   height: auto;
-  border-radius: 10px;
-  margin-left: 30px;
+  border-radius: 50px;
+  margin-left: 50px;
   box-shadow: -12px 23px 23px -5px #0a0806c0;
   border: none;
-  transition: 0.5s;
+  transition: 1.30s;
 }
