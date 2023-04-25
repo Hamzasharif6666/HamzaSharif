@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 :root {
 --dark: #354259;
---darkigh: #485975;
+--darkigh: #48597585;
 --brown: #cdc2ae;
 --gold: #ece5c7;
 --green: #c2ded1;
@@ -13,10 +13,14 @@ scroll-behavior: smooth;
 }
 
 body {
+margin: 0;
 font-size: 12px;
 font-family: "Nunito", sans-serif;
-background: #354259; 
+background: var(--dark);
+background-image: url(Background.4.png); 
+background-attachment: fixed;
 }
+
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -523,7 +527,7 @@ width: 100%;
 }
 
 #thanks {
-background-color: #485975;
+background-color: var(--darkigh);
 padding: 40px;
   padding-top: 40px;
   padding-right: 40px;
@@ -578,9 +582,9 @@ display:block;
 .baki img {
   max-width: 300px;
   height: auto;
-  border-radius: 50px;
+  border-radius: 40px;
   margin-left: 50px;
-  box-shadow: -12px 23px 23px -5px #0a0806c0;
+  box-shadow: -12px 2px 23px -5px #0a0806c0;
   border: none;
   transition: 1.30s;
 }
