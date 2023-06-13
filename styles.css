@@ -17,8 +17,11 @@ margin: 0;
 font-size: 12px;
 font-family: "Nunito", sans-serif;
 background: var(--dark);
-background-image: url(Background.4.png); 
+background-image: url(/image/Background.4.png); 
 background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 }
 
 
@@ -606,5 +609,5 @@ font-size: 22px;
 }
 
 .baki img {
-  max-widtth: 300px; height:
+ max-width: 300px;
 }
