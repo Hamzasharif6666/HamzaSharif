@@ -588,3 +588,23 @@ display:block;
   border: none;
   transition: 1.30s;
 }
+
+#thanks {
+  background-color: var(--darkigh);
+  padding: 40px;
+  padding-top: 40;
+  width:50%;
+  border-radius: 15px;
+}
+
+.items{
+  font-size: 22px;
+}
+
+.setup_discord {
+font-size: 22px;
+}
+
+.baki img {
+  max-widtth: 300px; height:
+}
