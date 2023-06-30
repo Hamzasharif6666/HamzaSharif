@@ -6,66 +6,74 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
 	<title>Hamza</title>
-	<link rel="icon" href="image/Icon.png">
+	<link rel="icon" href="/image/Icon.png">
+	<link rel="icon" type="image/x-icon" href="./favicon.png" />
+    <script defer src="https://smtpjs.com/v3/smtp.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"
+    ></script>
+    <script defer src="script.js"></script>
+	<script> src="./script.js"></script>
 </head>
 <body>
-	<body cz-shortcut-listen="true">
-		<div class="everything">
-		  <!-- Intro Page -->
-		  <section class="intro" id="intro">
+	<div class="everything"></div>
+		<!-- Intro Page -->
+		<section class="intro" id="intro">
 			<div class="img-desc">
-			  <div id="intro-box">
-				<div id="document">
-					
+				<div id="intro-box">
+					<div id="document">
+					</div>
+					<h1 class="intro-title">
+						<span class="text-wrapper">
+							<span class="letter" style="transform: translateY(0em) translateX(0em) translateZ(0px) rotateZ(0deg);">
+								hi, i'm 
+								<span class="name">Hamza</span>
+							</span>
+						</span>
+					</h1>
+					<h2 class="intro-sub">i code and design things</h2>
+					<p class="intro-desc">
+						I want to be a computer science student based in the University of Calgary. I'm interested in full-stack development, with hopes of becoming a software engineer.
+					</p>
 				</div>
-				<h1 class="intro-title">
-				  <span class="text-wrapper">
-					<span class="letter" style="transform: translateY(0em) translateX(0em) translateZ(0px) rotateZ(0deg);">
-						hi, i'm 
-						<span class="name">Hamza</span></span>
-				  </span>
-				</h1>
-				<h2 class="intro-sub">i code and design things</h2>
-				<p class="intro-desc">
-					I want to be a computer science student based in university of calgary. I'm interested in full-stack development, with hopes of becoming a software engineer.
-				</p>
-			  </div>
 				
-			  <!-- SVG of a Man -->
-			  <div class="man">
-				<object data="Asset.svg" width="350" height="auto"><div id="document">
-					<svg width="565.94" height="625.01">
-					</svg>
-				</div></object>
-				<!-- <a href="https://www.vecteezy.com/free-vector/sitting-at-desk">Sitting At Desk Vectors by Vecteezy</a> -->
-			  </div>
+				<!-- SVG of a Man -->
+				<div class="man">
+					<object data="Asset.svg" width="350" height="auto">
+						<svg width="565.94" height="625.01">
+						</svg>
+					</object>
+					<!-- <a href="https://www.vecteezy.com/free-vector/sitting-at-desk">Sitting At Desk Vectors by Vecteezy</a> -->
+				</div>
 			</div>
 			<a href="mailto:hamza.yahya608@gmail.com" class="intro-contact">Email Me</a>
 			<div class="social-mobile">
-			  <a class="links" href="https://xero.gg/player/spin"><i class="bi bi-Xero"></i></a>
-			  <a class="links" href="https://www.instagram.com/hamza.yahyaa/"><i class="bi bi-instagram"></i></a>
-			  <a class="links" href="https://www.tiktok.com/@jij.iq"><i class="bi bi-tiktok"></i></a>
-			  <a class="links" href="/index.html"><i class="bi bi-"></i>
-			  </a>
+				<a class="links" href="https://xero.gg/player/spin"><i class="bi bi-Xero"></i></a>
+				<a class="links" href="https://www.instagram.com/hamza.yahyaa/"><i class="bi bi-instagram"></i></a>
+				<a class="links" href="https://www.tiktok.com/@jij.iq"><i class="bi bi-tiktok"></i></a>
+				<a class="links" href="/index.html"><i class="bi bi-"></i></a>
 			</div>
-		  </section>
-	
-		  <!-- About Me -->
-		  <section class="about-me" id="about">
+		</section>
+
+		<!-- About Me -->
+		<section class="about-me" id="about">
 			<h1>/about me</h1>
 			<div class="container">
-			  <div class="aboutdesc">
-				<br>
-				<p>Here are my Discord & video game names:</p>
-				<ul class="tech-stack" id="stack">
-				  <li>Disc: Spin6666</li>
-				  <li>Fort: Spin6666</li>
-				  <li>Valo: Spin#6666</li>
-				  <li>COD: Spin#11668 </li>
-				  <li>Xero: Spin</li>
-				  <div class="Xero"><a href="https://xero.gg/player/spin">Spin</a></div>
-				 
+				<div class="aboutdesc">
+					<br>
+					<p>Here are my Discord & video game names:</p>
+					<ul class="tech-stack" id="stack">
+						<li class="nickname" onclick="copyToClipboard('Spin6666')">Disc: Spin6666</li>
+						<li class="nickname" onclick="copyToClipboard('Spin6666')">Fort: Spin6666</li>
+						<li class="nickname" onclick="copyToClipboard('Spin#6666')">Valo: Spin#6666</li>
+						<li class="nickname" onclick="copyToClipboard('Spin#11668')">COD: Spin#11668</li>
+						<li class="nickname-xero"><a href="https://xero.gg/player/spin">Xero: Spin</a></li>
+						<li class="nickname-steam"><a href="https://steamcommunity.com/id/Spin6666/">Stea: Spin</a></li>
 				</ul>
+
+				<p></p>	
+				
 				<p>
 				  Outside of work I enjoy playing soccer, working out, watching anime & movies, and I also like playing
 				  video games!
@@ -74,12 +82,9 @@
 				<p>
 				  
 				  <br>
-				  <div class="setup_discord">
-					<a href="setup.html">Desk Setup Links</a>
-					<br>
-					<br>
-					<a href="https://discord.gg/C5aGUhJaA2">My discord server</a>
-					<br>
+				  <div class="discord-setup"><a href="https://discord.gg/C5aGUhJaA2">My Discord Server</a></div>
+				  
+				  <div class="discord-setup"><a href="setup.html">Desk Setup Links</a>
 				  </div>
 				</p>
 			  </div>
@@ -198,11 +203,11 @@
 		  </div>
 		</div>
 	    <nav class="nav">
-			<a href="index.html#intro">/home</a>
-			<a href="index.html#about">/about</a>
-			<a href="index.html#projects">/projects</a>
+			<a href="#intro">/home</a>
+			<a href="#about">/about</a>
+			<a href="#projects">/projects</a>
 			<a href="setup.html">/setup + store</a>
-			<a href="index.html#contact">/contact me</a>
+			<a href="#contact">/contact me</a>
 
 			<div class="social"></div>
 			</nav>

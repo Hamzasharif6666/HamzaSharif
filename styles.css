@@ -612,3 +612,139 @@ font-size: 22px;
 .baki img {
  max-width: 300px;
 }
+
+
+
+.about-me h1 {
+	margin-bottom: 10px;
+}
+
+.aboutdesc {
+	margin-left: 20px;
+}
+
+.aboutdesc p {
+	font-size: 18px;
+	color: var(--dgreen);
+	margin-bottom: 10px;
+}
+
+.tech-stack {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.nickname {
+	background-color: var(--darkigh);
+	padding: 10px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	color: #333;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.nickname:hover {
+	background-color: var(--dgreen);
+}
+
+.nickname::before {
+	content: "▹";
+	margin-right: 5px;
+}
+
+.nickname:last-child {
+	margin-bottom: 0;
+}
+
+.nickname-xero {
+	background-color: var(--darkigh);
+	padding: 10px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	/*color: #333;*/  /* Not Sure when it will be use.*/
+	font-size: 16px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.nickname-xero a {
+	text-decoration: none;
+	color: var(--gold);
+}
+
+.nickname-xero:hover {
+	background-color: var(--dgreen);
+}
+
+.nickname-xero::before {
+	content: none;
+}
+
+.nickname-xero:last-child {
+	margin-bottom: 0;
+}
+
+/* Steam */
+.nickname-steam {
+	background-color: var(--darkigh);
+	padding: 10px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	/* color: #333;*/  /* Not Sure when it will be use.*/
+	font-size: 16px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.nickname-steam a {
+	text-decoration: none;
+	color: var(--gold);
+}
+
+.nickname-steam:hover {
+	background-color: var(--dgreen);
+}
+
+.nickname-steam::before {
+	content: none;
+}
+
+.nickname-steam:last-child {
+	margin-bottom: 5;
+}
+
+
+
+
+.discord-setup {
+	background-color: var(--darkigh);
+	padding: 10px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	color: #333;
+	font-size: 16px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.discord-setup a {
+	text-decoration: none;
+	color: var(--gold);
+}
+
+.discord-setup:hover {
+	background-color: var(--dgreen);
+}
+
+.discord-setup::before {
+	content: none;
+}
+
+.discord-setup:last-child {
+	margin-bottom: 0;
+}
+
+
+

@@ -1,0 +1,97 @@
+:root {
+    --dark: #354259;
+    --darkigh: #48597585;
+    --brown: #cdc2ae;
+    --gold: #ece5c7;
+    --green: #c2ded1;
+    --dgreen: #97aca2;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    font-size: 12px;
+    font-family: "Nunito", sans-serif;
+    background: var(--dark);
+    background-image: url(/image/Background.4.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .profile {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--darkigh);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile h1 {
+    text-align: center;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  
+  .profile .profile-picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile .profile-picture-container img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .profile .profile-picture-container input[type="file"] {
+    display: none;
+  }
+  
+  .profile p {
+    text-align: center;
+    color: var(--dgreen);
+    margin-bottom: 20px;
+  }
+  
+  .profile ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .profile ul li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 18px;
+    color: var(--dgreen);
+  }
+  
+  .profile ul li a {
+    text-decoration: none;
+    color: var(--dgreen);
+  }
+  
+  .profile ul li a:hover {
+    color: var(--dark);
+  }
+  
+  .profile ul li img {
+    width: 16px; /* Adjust the width as desired */
+    height: 16px; /* Adjust the height as desired */
+    margin-right: 5px;
+    color: var(--gold); /* Set the color to "--gold" */
+  }
