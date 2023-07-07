@@ -37,7 +37,7 @@ anime
   });
 
 
-// CopyToClipboard
+// CopyToClipboard Nicknames.
   function copyToClipboard(text) {
     const tempElement = document.createElement('textarea');
     tempElement.value = text;
@@ -47,4 +47,5 @@ anime
     document.body.removeChild(tempElement);
     alert('Nickname copied to clipboard!');
   }
+  
 //
