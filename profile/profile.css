@@ -66,6 +66,7 @@ body {
   text-align: right;
   margin-left: 25px;
   margin-top: 40px;
+  pointer-events: none;
 }
 
 .profile-name h1 {
@@ -73,10 +74,11 @@ body {
   color: var(--yellow);
   transition: color 0.3s ease;
   margin-right: 80px;
+  text-shadow: 0 0 5px var(--yellow);
 }
 
 .profile-name h1:hover {
-  text-shadow: 0 0 5px var(--yellow);
+
 }
 
 .profile-name h1 a {
@@ -94,6 +96,7 @@ body {
   margin-left: 5px;
   fill: var(--yellow);
   transition: filter 0.3s ease;
+  pointer-events: fill;
 }
 
 .name-icon:hover {
