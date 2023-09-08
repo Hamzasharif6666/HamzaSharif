@@ -1,0 +1,715 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+:root {
+--blue: #007bff;
+--indigo: #6610f2;
+--purple: #6f42c1;
+--pink: #e83e8c;
+--red: #ff306a;
+--orange: #fd7e14;
+--yellow: #ffc107;
+--green: #00ffa8;
+--teal: #20c997;
+--cyan: #17a2b8;
+--white: #fff;
+--twhite:#deebffe0;
+--dwhite:#a0abbae0;
+--gray: #6c757d;
+--gray-dark: #343a40;
+--primary: #007bff;
+--secondary: #6c757d;
+--success: #00ffaa9f;
+--info: #17a2b8;
+--warning: #ffc107;
+--danger: #ff306a;
+--light: #f8f9fa;
+--dark: #0a121a;
+--darkigh:#1b253042;
+--hover-darkigh:#243141a8;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+margin: 0;
+font-size: 12px;
+font-family: "Nunito", sans-serif;
+background: var(--dark);
+background-image: url(/Images/background/Background.4.png); 
+background-attachment: fixed;
+background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+::-webkit-scrollbar {
+width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+border-radius: 5px;
+box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+  
+::-webkit-scrollbar-thumb {
+border-radius: 5px;
+background-color: var(--dwhite);
+}
+  
+::-webkit-scrollbar-thumb:hover {
+background-color: var(--twhite);
+}
+  
+.nav {
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+position: fixed;
+right: 0;
+padding-right: 5%;
+bottom: 15%;
+background-color: transparent;
+}
+  
+.nav a {
+color: var(--dwhite);
+font-size: 30px;
+text-decoration: none;
+transition: 0.5s;
+}
+  
+.nav a:hover {
+color: var(--twhite);
+transform: scale(1.06);
+}
+  
+.social {
+padding-top: 30px;
+font-size: 30px;
+text-decoration: none;
+}
+  
+.social i {
+color: var(--dwhite);
+}
+  
+.social-mobile {
+padding-top: 30px;
+font-size: 30px;
+text-decoration: none;
+}
+  
+.social-mobile i {
+color: var(--dwhite);
+}
+  
+.links {
+padding: 3px;
+}
+  
+.links :hover {
+color: var(--dwhite);
+}
+
+.intro {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding-left: 15%;
+padding-top: 5%;
+min-height: 100vh;
+}
+
+.intro-title {
+font-size: 86px;
+color: var(--dwhite);
+}
+
+.intro-title .text-wrapper {
+position: relative;
+display: inline-block;
+padding-top: 0.2em;
+padding-right: 0.05em;
+padding-bottom: 0.1em;
+overflow: hidden;
+}
+
+.intro-title .letter {
+transform-origin: 0 100%;
+display: inline-block;
+line-height: 1em;
+}
+
+.name {
+color: var(--twhite);
+}
+  
+.intro-sub {
+margin-top: -65px;
+font-size: 35px;
+color: var(--dwhite);
+}
+
+.intro-desc {
+font-size: 22px;
+max-width: 70%;
+text-align: justify;
+padding-bottom: 50px;
+margin-top: -20px;
+color: var(--dwhite);
+}
+
+.intro object {
+max-width: 350px;
+}
+
+object {
+overflow-clip-margin: content-box !important;
+overflow: clip !important;
+overflow-x: none;
+overflow-y: none;
+}
+
+svg:root {
+width: 100%;
+height: 100%;
+}
+
+svg {
+    display: center;
+}
+
+.img-desc {
+display: flex;
+flex-direction: row;
+}
+
+.man {
+margin-top: 5%;
+margin-right: 20%;
+}
+ 
+.intro-contact {
+text-decoration: none;
+color: var(--dwhite);
+font-size: 25px;
+font-weight: bolder;
+padding: 15px 30px;
+cursor: pointer;
+border: 3px solid var(--dwhite);
+border-radius: 20px;
+transition: 0.5s;
+}
+
+.intro-contact:hover {
+color: var(--twhite);
+border: 2px solid var(--twhite);
+transform: scale(1.06);
+}
+
+.about-me {
+padding-top: 5px;
+padding-left: 15%;
+padding-right: 20%;
+min-height: 60vh;
+}
+
+#about h1:after {
+content: "";
+display: block;
+width: 300px;
+margin-top: 40px;
+height: 1px;
+margin-left: 20px;
+background-color: var(--dwhite);
+}
+
+.about-me h1 {
+display: flex;
+padding-bottom: 32px;
+font-size: 46px;
+margin-bottom: 10px;
+font-weight: 700;
+color: var(--twhite);
+
+}
+
+.about-me a {
+text-decoration: none;
+color: var(--dwhite);
+font-weight: 32px;
+}
+
+.about-me a:hover{
+    color: var(--twhite);
+}
+
+.container {
+display: flex;
+flex-direction: row;
+}
+
+/* About me description */
+.container p {
+font-size: 21px;
+color: var(--dwhite);
+text-align: justify;
+margin: 0;
+max-width: 600px;
+}
+
+.aboutdesc {
+margin-left: 20px;
+}
+
+.aboutdesc p {
+font-size: 18px;
+color: var(--dwhite);
+margin-bottom: 10px;
+}
+
+#stack {
+padding-top: 20px;
+list-style: none;
+display: grid;
+grid-template-columns: repeat(2, minmax(180px, 10px));
+}
+
+.tech-stack {
+list-style: none;
+}
+    
+.tech-stack li {
+    display: inline-block;
+    vertical-align: middle; /* Align items vertically in the middle */
+    margin-right: 10px; /* Add some spacing between items (adjust as needed) */
+    position: relative;
+    padding-left: 20px;
+    font-size: 18px;
+    color: var(--dwhite);
+}
+
+.tech-stack li object {
+    vertical-align: middle; /* Align the SVG icon vertically in the middle */
+    margin-right: 5px; /* Add some spacing between the icon and text (adjust as needed) */
+}
+
+
+.tech-stack li::before {
+content: " ";
+color: var(--twhite);
+position: absolute;
+left: 0;
+}
+
+.tech-stack li:hover{
+color: var(--twhite);
+}
+
+.tech-stack {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+
+.nickname {
+    position: relative;
+    background-color: var(--darkigh);
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    user-select: none;
+}
+
+.nickname::before {
+    display: block;
+    position: absolute;
+    top: -20px; /* Adjust this value to control the vertical position */
+    left: 0%;
+    transform: translateX(50%); /* Move to the center horizontally */
+    width: 50%;
+    background-color: var(--success);
+    text-align: center;
+    line-height: 2;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    transition: opacity 1.5s;
+    opacity: 0;
+}
+
+.nickname:hover::before {
+    content: "Copy";
+    opacity: 1;
+}
+
+.nickname:hover {
+    opacity: 1;
+}
+
+.nickname.copied::before {
+    content: "Copied";
+    opacity: 1;
+}
+
+.copied {
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out; /* Adjust the duration as needed */
+}
+
+.copied.fade-out {
+    opacity: 1;
+}
+  
+
+.nickname:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Xero */
+.nickname-xero {
+background-color: var(--darkigh);
+padding: 10px;
+margin-bottom: 5px;
+border-radius: 5px;
+/* color: #333;*/  /* Not Sure when it will be use.*/
+font-size: 16px;
+cursor: pointer;
+display: inline-block;
+transition: 0.5s;
+user-select: none;
+}
+
+.nickname-xero a {
+text-decoration: none;
+color: var(--glow);
+}
+
+.nickname-xero:hover {
+background-color: var(--success);
+transition: 0.5s;
+}
+
+.nickname-xero::before {
+content: none;
+}
+
+.nickname-xero:last-child {
+margin-bottom: 5;
+}
+
+/* Steam */
+.nickname-steam {
+background-color: var(--darkigh);
+padding: 10px;
+margin-bottom: 5px;
+border-radius: 5px;
+/* color: #333;*/  /* Not Sure when it will be use.*/
+font-size: 16px;
+cursor: pointer;
+display: inline-block;
+transition: 0.5s;
+user-select: none;
+}
+
+.nickname-steam a {
+text-decoration: none;
+color: var(--glow);
+}
+
+.nickname-steam:hover {
+background-color: var(--success);
+transform: scale(0.06s);
+}
+
+.nickname-steam::before {
+content: none;
+}
+
+.nickname-steam:last-child {
+margin-bottom: 5;
+}
+
+/* discord & setup */
+.discord-setup {
+background-color: var(--darkigh);
+padding: 10px;
+margin-bottom: 5px;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+display: inline-block;
+transition: 0.5s;
+}
+
+.discord-setup:hover {
+background-color: var(--hover-darkigh);
+}
+
+.discord-setup a {
+text-decoration: none;
+color: var(--twhite);
+}
+
+.discord-setup::before {
+content: none;
+}  
+
+.discord-setup:last-child {
+margin-bottom: 5;
+}
+
+/* baki */
+.baki img {
+max-width: 300px;
+height: auto;
+border-radius: 20px;
+margin-left: 30px;
+box-shadow: 6px 13px 23px -5px rgb(0 0 0 / 46%);
+border: none;
+transition: 0.5s;
+}
+    
+.baki img:hover {
+transform: scale(1.03);
+}
+
+#projects h1:after {
+content: "";
+display: block;
+width: 300px;
+margin-top: 40px;
+height: 1px;
+margin-left: 20px;
+background-color: var(--dwhite);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-gap: 15px;
+}
+
+.card {
+    display: flex;
+    padding: 2rem 1.75rem;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--darkigh);
+    border-radius: 15px;
+    transition: 0.5s;
+}
+    
+.card:hover {
+    transform: scale(1.04);
+}
+    
+.card-header {
+    margin-top: -20px;
+    display: flex;
+    padding: 1.25em 0 !important;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: none !important;
+}
+    
+.card-title {
+    color: var(--twhite);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+    
+.card-desc {
+    color: var(--dwhite);
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+    
+.card-tech {
+    color: var(--dwhite);
+    font-size: 16px;
+    position: absolute;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    bottom: 0;
+    padding-top: 10px;
+}
+
+.container p {
+    font-size: 21px;
+    color: var(--twhite);
+    text-align: justify;
+    margin: 0;
+    max-width: 600px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#thanks {
+    background-color: var(--darkigh);
+    padding: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    width: 50%;
+    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    }
+        
+#thanks p {
+    font-size: 28px;
+    text-align:center;
+}
+
+.items{
+    font-size: 22px;
+}
+
+
+  
+
+@media only screen and (max-width: 768px) {
+    .man {
+    display: none;
+    }
+    
+    .nav {
+    display: none;
+    }
+    
+    .face {
+    display: none;
+    }
+    
+    .baki { 
+    display: none;
+    }
+    
+    .intro {
+    min-height: unset;
+    padding-left: unset;
+    margin: 0;
+    align-items: center;
+    }
+    
+    .intro-title {
+    font-size: 40px;
+    text-align: center;
+    }
+    
+    .intro-sub {
+    margin-top: -30px;
+    text-align: center;
+    }
+    
+    .intro-desc {
+    font-size: 18px;
+    text-align: center;
+    max-width: 100%;
+    }
+    
+    .tech-stack {
+    padding: unset;
+    }
+    
+    #stack {
+    padding: 0;
+    grid-template-columns: repeat(2, minmax(120px, 10px));
+    }
+    
+    #job-desc li {
+    font-size: 20px;
+    text-align: left;
+    }
+    
+    .everything {
+    padding: 10px;
+    width: 95%;
+    }
+    
+    .about-me {
+    padding-top: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
+    }
+    
+    .about-me h1 {
+    font-size: 25px;
+    padding-bottom: unset;
+    }
+    
+    #about h1:after {
+    content: "";
+    display: block;
+    width: 200px;
+    margin-top: 20px;
+    height: 0.5px;
+    margin-left: 10px;
+    background-color: var(--dwhite);
+    }
+    #projects h1:after {
+    content: "";
+    display: block;
+    width: 200px;
+    margin-top: 20px;
+    height: 0.5px;
+    margin-left: 10px;
+    background-color: var(--dwhite);
+    }
+    
+    
+    #contact-btn {
+    width: unset;
+    }
+    }
+    
+    @media (min-width: 769px) {
+    .social-mobile {
+    display: none;
+    }
+    }
+    
+    @media (max-width: 1080px) {
+    .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+    }
+    .contact-box {
+    width: 100%;
+    }
+    }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+    justify-content: center;
+    color: var(--dwhite);
+    font-size: 15px;
+    user-select: none;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--twhite);
+}
