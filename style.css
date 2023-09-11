@@ -141,11 +141,24 @@ overflow: hidden;
 transform-origin: 0 100%;
 display: inline-block;
 line-height: 1em;
+user-select: none;
 }
 
 .name {
-color: var(--twhite);
+color: var(--yellow);
+text-shadow: 0 0 10px rgba(255, 187, 0, 0.7);
+animation: nameGlowAnimation 1s infinite alternate;
+user-select: none;
 }
+
+@keyframes nameGlowAnimation {
+    0% {
+      text-shadow: 0 0 10px rgba(255, 187, 0, 0.658);
+    }
+    100% {
+      text-shadow: 0 0 20px rgba(255, 187, 0, 0.192); /* You can adjust the size and color here */
+    }
+  }
   
 .intro-sub {
 margin-top: -65px;
@@ -209,6 +222,7 @@ color: var(--twhite);
 border: 2px solid var(--twhite);
 transform: scale(1.06);
 }
+
 
 .about-me {
 padding-top: 5px;
@@ -476,6 +490,7 @@ margin-left: 30px;
 box-shadow: 6px 13px 23px -5px rgb(0 0 0 / 46%);
 border: none;
 transition: 0.5s;
+user-select: ;
 }
     
 .baki img:hover {
