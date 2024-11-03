@@ -37,8 +37,7 @@ margin: 0;
 font-size: 12px;
 font-family: "Nunito", sans-serif;
 background: var(--dark);
-background-image: url(/Images/background/Background.4.png); 
-background-attachment: fixed;
+background-image: url(/HTML&CSS/HamzaSharif/Images/background/Background.1.png  ); 
 background-position: center;
 background-attachment: fixed;
 background-repeat: no-repeat;
@@ -72,6 +71,7 @@ right: 0;
 padding-right: 5%;
 bottom: 15%;
 background-color: transparent;
+user-select: none;
 }
   
 .nav a {
@@ -158,12 +158,13 @@ user-select: none;
     100% {
       text-shadow: 0 0 20px rgba(255, 187, 0, 0.192); /* You can adjust the size and color here */
     }
-  }
+}
   
 .intro-sub {
 margin-top: -65px;
 font-size: 35px;
 color: var(--dwhite);
+user-select: none;
 }
 
 .intro-desc {
@@ -203,6 +204,7 @@ flex-direction: row;
 .man {
 margin-top: 5%;
 margin-right: 20%;
+user-select: none;
 }
  
 .intro-contact {
@@ -215,6 +217,7 @@ cursor: pointer;
 border: 3px solid var(--dwhite);
 border-radius: 20px;
 transition: 0.5s;
+user-select: none;
 }
 
 .intro-contact:hover {
@@ -225,10 +228,10 @@ transform: scale(1.06);
 
 
 .about-me {
-padding-top: 5px;
-padding-left: 15%;
-padding-right: 20%;
-min-height: 60vh;
+    padding-top: 5px;
+    padding-left: 15%;
+    padding-right: 20%;
+    min-height: 60vh;
 }
 
 #about h1:after {
@@ -261,9 +264,18 @@ font-weight: 32px;
     color: var(--twhite);
 }
 
+.setup-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Set max width for your container */
+    overflow: hidden;
+}
+
 .container {
 display: flex;
 flex-direction: row;
+justify-content: space-between;
+margin-right: 20px;
 }
 
 /* About me description */
@@ -276,12 +288,14 @@ max-width: 600px;
 }
 
 .aboutdesc {
-margin-left: 20px;
+padding: 20px;
+margin-top: 20px;
+text-align: left;
 }
 
 .aboutdesc p {
 font-size: 18px;
-color: var(--dwhite);
+color: var(--danger);
 margin-bottom: 10px;
 }
 
@@ -481,6 +495,23 @@ content: none;
 margin-bottom: 5;
 }
 
+.setup-image {
+    width: 300px; /* Set width for the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.setup-container {
+    display: flex;  /* Use flexbox for layout */
+    align-items: flex-start;  /* Align items to the top */
+    justify-content: space-between;  /* Space items evenly */
+    margin-top: 20px; /* Adjust spacing as needed */
+}
+
+
+.setup-image-container {
+    margin-left: 500px; /* Adjust the distance from the text */
+}
+
 /* baki */
 .baki img {
 max-width: 300px;
@@ -490,7 +521,7 @@ margin-left: 30px;
 box-shadow: 6px 13px 23px -5px rgb(0 0 0 / 46%);
 border: none;
 transition: 0.5s;
-user-select: ;
+user-select: none;
 }
     
 .baki img:hover {
@@ -597,6 +628,7 @@ p {
 
 .items{
     font-size: 22px;
+    
 }
 
 
@@ -662,10 +694,11 @@ p {
     }
     
     .about-me {
-    padding-top: 25px;
-    padding-left: 5%;
-    padding-right: 5%;
-    }
+    padding-top: 5px;
+  padding-left: 15%;
+  padding-right: 20%;
+  min-height: 60vh;
+}
     
     .about-me h1 {
     font-size: 25px;

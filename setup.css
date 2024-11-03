@@ -1,0 +1,317 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+:root {
+--blue: #007bff;
+--indigo: #6610f2;
+--purple: #6f42c1;
+--pink: #e83e8c;
+--red: #ff306a;
+--orange: #fd7e14;
+--yellow: #ffc107;
+--green: #00ffa8;
+--teal: #20c997;
+--cyan: #17a2b8;
+--white: #fff;
+--twhite:#deebffe0;
+--dwhite:#a0abbae0;
+--gray: #6c757d;
+--gray-dark: #343a40;
+--primary: #007bff;
+--secondary: #6c757d;
+--success: #00ffaa9f;
+--info: #17a2b8;
+--warning: #ffc107;
+--danger: #ff306a;
+--light: #f8f9fa;
+--dark: #0a121a;
+--darkigh:#1b253042;
+--hover-darkigh:#243141a8;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-size: 12px;
+    font-family: "Nunito", sans-serif;
+    background: var(--dark);
+    background-image: url(/HTML&CSS/HamzaSharif/Images/background/Background.1.png  ); 
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.items {
+    font-size: 22px;
+}
+
+.items ul {
+    list-style-type: disc;
+    padding-left: 20px; /* Adjust spacing for bullets */
+}
+
+.items ul li {
+    color: var(--dwhite); /* Set the color of the bullet points */
+    list-style-position: inside; /* Positions the bullet inside the list item */
+}
+
+.items ul li a {
+    color: inherit; /* Optional: Make link color match bullet color */
+    text-decoration: none;
+}
+
+.items ul li a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    right: 0;
+    padding-right: 5%;
+    bottom: 15%;
+    background-color: transparent;
+    user-select: none;
+}
+.nav a {
+    color: var(--dwhite);
+    font-size: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+      
+.nav a:hover {
+    color: var(--twhite);
+    transform: scale(1.06);
+}
+
+
+.setup-image-container {
+    position: relative; /* Ensure proper positioning of arrows */
+    display: flex; /* Keep elements aligned */
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+}
+
+.setup-image-container:hover .arrow {
+    opacity: 1; /* Show arrows on hover */
+}
+
+/* new stuff added */
+.setup-image-container {
+    position: relative; /* Added to ensure proper positioning of arrows */
+    float: right;
+    margin-left: 20px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.setup-image-container:hover .arrow {
+    display: block; /* Changed to block to show arrows on hover */
+}
+
+.arrow {
+    position: absolute; /* Position arrows absolutely */
+    top: 50%; /* Center arrows vertically */
+    transform: translateY(-50%); /* Center arrows */
+    display: none; /* Keep this to hide arrows initially */
+    width: 30px; /* Width of clickable area */
+    height: 30px; /* Height of clickable area */
+    cursor: pointer; /* Cursor changes to pointer */
+}
+
+.left-arrow {
+    left: -60px; /* Adjusted to position the left arrow outside the image */
+}
+
+.right-arrow {
+    right: -30px; /* Adjust this if needed */
+}
+
+.setup-image-container:hover .left-arrow,
+.setup-image-container:hover .right-arrow {
+    display: block; /* Ensure arrows are shown on container hover */
+}
+
+
+.setup-image {
+    display: fl;
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 6px 13px 23px -5px rgb(0 0 0 / 46%);
+    border: none;
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+    user-select: none;
+    cursor: pointer; /* Ensure the pointer cursor is included */
+    position: relative; /* Required for top positioning */
+    top: 0; /* Adjust this value if you want to set it higher */
+}
+
+.setup-image-container:hover .setup-image {
+    display: block; /* Show the image on hover */
+}
+
+
+
+
+
+
+
+
+
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0; /* Initially hide arrows */
+    transition: none; /* No smooth transition for appearance */
+    width: 20px; /* Keep this for clickable area */
+    height: 20px;
+}
+
+.left-arrow {
+    left: 5px;
+}
+
+.right-arrow {
+    right: -20px;
+}
+
+.arrow:hover svg {
+    fill: var(--twhite); /* Changes arrow color on hover */
+}
+
+.arrow svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--dwhite); /* Sets the initial arrow color */
+    transition: fill 0.3s ease; /* Smooth color transition on hover */
+}
+
+.setup-image-container:hover {
+    transform: none; /* Scale the image on hover for a zoom effect */
+}
+
+
+.about-me {
+    padding-top: 5px;
+    padding-left: 15%;
+    padding-right: 20%;
+    min-height: 60vh;
+}
+
+.about-me h1 {
+    display: flex;
+    padding-bottom: 32px;
+    font-size: 46px;
+    font-weight: 700;
+    color: var(--dwhite);
+}
+
+#about h1:after {
+    content: "";
+    display: block;
+    width: 300px;
+    margin-top: 40px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: var(--dwhite);
+}
+.about-me a {
+    text-decoration: none;
+    
+    font-weight: 32px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 20px;
+    background-color: var(--darkigh);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(50% - 20px); /* Set the width to half of the viewport width minus padding */
+}
+
+
+.items :hover{
+    color: var(--twhite);
+}
+.about-me a {
+    text-decoration: none;
+    color: var(--dwhite);
+    font-weight: 32px;
+}
+.container p {
+    font-size: 21px;
+    color: var(--dwhite);
+    text-align: justify;
+    margin: 0;
+    max-width: 600px;
+}
+#thanks {
+    background-color: var(--darkigh);
+    padding: 40px;
+    width: 50%;
+    border-radius: 15px;
+}
+
+.info-text {
+    flex: 1;
+}
+
+.setup-image {
+    display: none;
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 6px 13px 23px -5px rgb(0 0 0 / 46%);
+    border: none;
+    transition: 0.9s;
+    user-select: none;
+}
+
+.setup-image:hover {
+    transform: scale(1.03);
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .nav {
+      display: none;
+    }
+    .everything {
+      padding: 10px;
+      width: 95%;
+    }
+    
+}
+
+@media (max-width: 1440px) {
+    .setup-image {
+        display: none;
+    }
+    
+    .about-me {
+        padding-top: 25px;
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+    .about-me h1 {
+        font-size: 25px;
+        padding-bottom: unset;
+      }
+    #about h1:after {
+        display: none;
+      }
+}

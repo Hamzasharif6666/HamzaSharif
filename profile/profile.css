@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #ff306a;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #00ffa8;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --twhite:#deebffe0;
+  --dwhite:#a0abbae0;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #00ffaa9f;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #ff306a;
+  --light: #f8f9fa;
+  --dark: #0a121a;
+  --darkigh:#1b253042;
+  --hover-darkigh:#243141a8;
+  }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-size: 12px;
+  font-family: "Nunito", sans-serif;
+  background: var(--dark);
+  background-image: url(/Images/background/wall\ paper.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body::before {
+  content: "";
+  background-color: #030608;
+  opacity: 0.7;  /* Increase the opacity for a darker overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* To ensure the overlay is behind the content */
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-left: 200px; 
+  margin-top: 50px; 
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.514);
+}
+
+#profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-image input[type="file"] {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.uniteddb-icon {
+  display: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.profile-details {
+  text-align: right;
+  margin-right: 20px; /* Adjust the margin as needed */
+  margin-top: 20px; /* Adjust the margin as needed */
+  pointer-events: none;
+}
+
+.name {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--yellow);
+  text-shadow: 0 0 5px var(--yellow);
+  display: inline-block; 
+  text-align: right;
+  margin-left: 20px;
+  pointer-events: none;
+  text-shadow: 0 0 10px rgba(255, 187, 0, 0.7);
+animation: nameGlowAnimation 1s infinite alternate;
+user-select: none;
+}
+
+@keyframes nameGlowAnimation {
+    0% {
+      text-shadow: 0 0 10px rgba(255, 187, 0, 0.658);
+    }
+    100% {
+      text-shadow: 0 0 20px rgba(255, 187, 0, 0.192); /* You can adjust the size and color here */
+    }
+}
+
+.Owner-svg {
+  top: 2px;
+  left: 3px;
+  position: relative;
+  display: inline-block;
+}
+
+.Owner-text {
+  position: absolute;
+  top: -18px; /* Adjust the distance from the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  color: var(--dwhite);
+  opacity: 0; /* Initially hide the text with opacity */
+  transition: opacity 0.3s ease; /* Add a smooth transition effect */
+  pointer-events: none; /* Prevent interaction with the text */
+}
+
+.Owner-svg:hover .Owner-text {
+  opacity: 1; /* Show the text when .Owner-svg is hovered */
+}
+
+.lamp {
+  position: relative;
+  margin: 0 auto;
+  width: 0.7rem;
+  height: 10rem;
+  background-image: 
+      linear-gradient(#000000b3, #000000b3),
+      linear-gradient(#000000b3, #000000b3),
+      linear-gradient(#000000b3, #000000b3);
+  background-repeat: no-repeat;
+  background-size: 
+    0.19rem 8rem, 
+    0.5rem 0.8rem,
+    0.8rem 2rem;
+  background-position: 
+    50% 0, 
+    0.13rem 8rem,
+    0 8.8rem;
+}
+.lamp:before,
+.lamp:after {
+    content: "";
+    position: absolute;
+}
+  
+.lamp:before {
+  left: -1.65rem;
+  bottom: -4rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: #ffffff08;
+  box-shadow: inset 2px -2px 10px #ffffff08;
+  transition: all 0.75s;
+}
+
+.light,
+.light:before {
+  position: absolute;
+}
+  
+.light {
+  top: 10.05rem;
+  left: 0.3rem;
+  width: 0;
+  height: 1.5rem;
+  border-right: 0.2rem solid #ffffff08;
+}
+  
+.light:before {
+  content: "";
+  top: 1.5rem;
+  left: -0.55rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  border: 0.2rem solid #ffffff08;
+  box-shadow: 0px 0px 50px #ffffff08;
+}
+
+.switch {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    left: 705px;
+    top: 175px;
+    z-index: 2;
+    appearance: none;
+  }
+
+input:checked~.lamp:before {
+    background: #ffffff;
+    box-shadow: 
+      0px 2px 10px #ffffffcc,
+      0px 5px 50px #ffffffcc,
+      0px 8px 80px #ffffff99,
+      0px 8px 120px #ffffff99;
+}
+@media (max-width: 768px) {
+  .profile-image {
+    position: absolute;
+    top: 50px; /* Adjust the top position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+
+  .name {
+    position: absolute;
+    top: 150px; /* Adjust the top position as needed */
+    left: 10px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  .name h1 {
+    font-size: 16px; /* Adjust the font size as needed */
+  }
+
+  .name-icon-container {
+    margin-top: 10px;
+    position: relative;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .Owner-text {
+    height: 0.8em;
+  }
+
+  .Owner-text {
+    font-size: 12px;
+    top: 100%;
+  }
+
+  .profile-title {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .profile-title span {
+    font-size: 14px; /* Adjust the font size as needed */
+    margin-left: 10px; /* Adjust the margin as needed */
+  }
+
+
+}
+
