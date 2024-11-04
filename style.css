@@ -251,7 +251,7 @@ font-size: 46px;
 margin-bottom: 10px;
 font-weight: 700;
 color: var(--twhite);
-
+user-select: none;
 }
 
 .about-me a {

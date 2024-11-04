@@ -206,6 +206,7 @@ body {
     padding-left: 15%;
     padding-right: 20%;
     min-height: 60vh;
+    user-select: none;
 }
 
 .about-me h1 {
