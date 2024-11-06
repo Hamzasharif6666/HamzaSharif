@@ -278,8 +278,8 @@
     .code-svg {
       position: absolute;
       font-size: 7px;
-      top: 187px; /* Adjust this based on how far below "Hamza" you want the icon */
-      left: calc(52% + 50px); /* Offset the icon to the right of "Hamza" */
+      top: 188px; /* Adjust this based on how far below "Hamza" you want the icon */
+      left: calc(52% + 55px); /* Offset the icon to the right of "Hamza" */
       transform: translateX(0); /* No need for centering now */
       text-align: center;
       margin: 0;
